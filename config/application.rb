@@ -30,7 +30,7 @@ module CapstoneWeekone
 		
 		config.middleware.insert_before 0, "Rack::Cors" do
       allow do
-        origins 'https://photo-staging-week-two.herokuapp.com'
+        origins /https:\/\/\w+\.github.io/
 
         resource 'api/*', 
           :headers => :any, 
